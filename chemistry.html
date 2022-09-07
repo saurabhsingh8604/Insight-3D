@@ -1,0 +1,28 @@
+<!doctype HTML>
+<html>
+<head>
+  <title>Chemistry</title>
+  <meta charset="utf-8">
+</head>
+<script src="./Assets/Scripts/scene.js"></script>
+<script src="./Assets/Scripts/augmented.js"></script>
+  <body style='margin : 0px; overflow: hidden;'>
+
+    <a-scene embedded arjs='sourceType: webcam;'>
+
+    <a-marker preset='custom' type='pattern' url='./Assets/Markers/H2O.patt'>
+      <a-entity gltf-model="url(Assets/Models/chemistry/H2O.glb)"></a-entity>
+    </a-marker>
+
+    <a-marker preset='custom' type='pattern' url='./Assets/Markers/C6H6.patt'>
+      <a-entity gltf-model="url(Assets/Models/chemistry/benzene.glb)"></a-entity>
+    </a-marker>
+
+    <a-marker preset='custom' type='pattern' url='./Assets/Markers/a.patt'>
+      <a-entity gltf-model="url(Assets/Models/english/apple.glb)"></a-entity>
+    </a-marker>
+
+  	<a-entity camera></a-entity>
+    </a-scene>
+  </body>
+</html>

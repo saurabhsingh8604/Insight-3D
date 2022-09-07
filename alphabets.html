@@ -1,0 +1,155 @@
+<!doctype HTML>
+<html>
+<head>
+  <title>Alphabets</title>
+  <meta charset="utf-8">
+</head>
+<script src="./Assets/Scripts/scene.js"></script>
+<script src="./Assets/Scripts/augmented.js"></script>
+  <body style='margin : 0px; overflow: hidden;'>
+
+    <a-scene embedded arjs='sourceType: webcam;'>
+
+    <!-- 
+          <a-marker-camera> keeps the object on screen even after removal of 
+          the marker whereas <a-marker> removes the object....
+          instead use <a-entity camera> for custom markers....
+    -->
+
+    <!--a-marker preset="hiro">
+            <a-box position='0 0.5 0' material='color: black;'></a-box>
+    </a-marker-->
+    <a-marker preset='custom' type='pattern' url='./Assets/Markers/pattern-marker.patt'>
+        <a-entity 
+            obj-model="obj: url(./Assets/Models/english/car.obj); 
+            mtl: url(./Assets/Texture/car.mtl)">
+        </a-entity>
+
+    </a-marker>
+
+    <a-assets>
+    <a-asset-item id="apple" src="./Assets/Models/english/apple.glb">
+    <a-asset-item id="pumpkin" src="./Assets/Models/english/pumpkin.glb">
+  </a-assets>
+
+
+  <!-- Using the asset management system. -->
+  <!--a-gltf-model src="#apple"></a-gltf-model-->
+
+    <a-marker preset='custom' type='pattern' url='./Assets/Markers/a.patt'>
+        <!--a-box position='0 0.5 0' material='color: black;'></a-box-->
+        <a-gltf-model src="#apple"></a-gltf-model>
+        <!-- <a-entity  animation-mixer gltf-model="#apple"></a-entity> -->
+        <!--a-entity 
+            obj-model="obj: url(./Airplane.obj); 
+            mtl: url(./Airplane.mtl)">
+        </a-entity-->
+    </a-marker>
+
+    <a-marker preset='custom' type='pattern' url='./Assets/Markers/b.patt'>
+      <!--    Add Model     -->
+    </a-marker>
+
+    <a-marker preset='custom' type='pattern' url='./Assets/Markers/c.patt'>
+      <a-entity 
+            obj-model="obj: url(./Assets/Models/english/car.obj); 
+            mtl: url(./Assets/Texture/car.mtl)">
+        </a-entity>
+    </a-marker>
+
+    <a-marker preset='custom' type='pattern' url='./Assets/Markers/d.patt'>
+      <!--    Add Model     -->
+    </a-marker>
+
+    <a-marker preset='custom' type='pattern' url='./Assets/Markers/e.patt'>
+      <!--    Add Model     -->
+    </a-marker>
+
+    <a-marker preset='custom' type='pattern' url='./Assets/Markers/f.patt'>
+      <!--    Add Model     -->
+    </a-marker>
+
+    <a-marker preset='custom' type='pattern' url='./Assets/Markers/g.patt'>
+        <a-entity gltf-model="url(./Assets/Models/english/girl.glb)"></a-entity>
+    </a-marker>
+
+    <a-marker preset='custom' type='pattern' url='./Assets/Markers/h.patt'>
+      <!--    Add Model     -->
+    </a-marker>
+
+    <a-marker preset='custom' type='pattern' url='./Assets/Markers/i.patt'>
+      <!--    Add Model     -->
+    </a-marker>
+
+    <a-marker preset='custom' type='pattern' url='./Assets/Markers/j.patt'>
+      <!--    Add Model     -->
+    </a-marker>
+
+    <a-marker preset='custom' type='pattern' url='./Assets/Markers/k.patt'>
+      <!--    Add Model     -->
+    </a-marker>
+
+    <a-marker preset='custom' type='pattern' url='./Assets/Markers/l.patt'>
+      <!--    Add Model     -->
+    </a-marker>
+
+    <a-marker preset='custom' type='pattern' url='./Assets/Markers/m.patt'>
+      <!--    Add Model     -->
+    </a-marker>
+
+    <a-marker preset='custom' type='pattern' url='./Assets/Markers/n.patt'>
+      <!--    Add Model     -->
+    </a-marker>
+
+    <a-marker preset='custom' type='pattern' url='./Assets/Markers/o.patt'>
+      <!--    Add Model     -->
+    </a-marker>
+
+    <a-marker preset='custom' type='pattern' url='./Assets/Markers/p.patt'>
+      <a-gltf-model src="#pumpkin"></a-gltf-model>
+    </a-marker>
+
+    <a-marker preset='custom' type='pattern' url='./Assets/Markers/q.patt'>
+      <!--    Add Model     -->
+    </a-marker>
+
+    <a-marker preset='custom' type='pattern' url='./Assets/Markers/r.patt'>
+      <!--    Add Model     -->
+    </a-marker>
+
+    <a-marker preset='custom' type='pattern' url='./Assets/Markers/s.patt'>
+      <!--    Add Model     -->
+    </a-marker>
+
+    <a-marker preset='custom' type='pattern' url='./Assets/Markers/t.patt'>
+      <!--    Add Model     -->
+    </a-marker>
+
+    <a-marker preset='custom' type='pattern' url='./Assets/Markers/u.patt'>
+      <!--    Add Model     -->
+    </a-marker>
+
+    <a-marker preset='custom' type='pattern' url='./Assets/Markers/v.patt'>
+      <!--    Add Model     -->
+    </a-marker>
+
+    <a-marker preset='custom' type='pattern' url='./Assets/Markers/w.patt'>
+      <!--    Add Model     -->
+    </a-marker>
+
+    <a-marker preset='custom' type='pattern' url='./Assets/Markers/x.patt'>
+      <!--    Add Model     -->
+    </a-marker>
+
+    <a-marker preset='custom' type='pattern' url='./Assets/Markers/y.patt'>
+      <!--    Add Model     -->
+    </a-marker>
+
+    <a-marker preset='custom' type='pattern' url='./Assets/Markers/z.patt'>
+      <!--    Add Model     -->
+    </a-marker>
+
+    <a-entity camera></a-entity>
+    </a-scene>
+  </body>
+</html>
