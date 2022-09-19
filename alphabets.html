@@ -4,8 +4,10 @@
   <title>Alphabets</title>
   <meta charset="utf-8">
 </head>
-<script src="./Assets/Scripts/scene.js"></script>
+<script src="./Assets/Scripts/scene.js"></script> 
+<!-- //scenes create krne k liye y function provide krta hai  -->
 <script src="./Assets/Scripts/augmented.js"></script>
+<!-- //yhi ar .js hi  hai jo ar ki functionality provide krta hai ,jaise marker scan krbna train krna or object project krana  -->
   <body style='margin : 0px; overflow: hidden;'>
 
     <a-scene embedded arjs='sourceType: webcam;'>
@@ -20,6 +22,7 @@
             <a-box position='0 0.5 0' material='color: black;'></a-box>
     </a-marker-->
     <a-marker preset='custom' type='pattern' url='./Assets/Markers/pattern-marker.patt'>
+<!-- // entity ,is marker pr  kya show krna hai ,wo entity k andar rkhna hai  -->
         <a-entity 
             obj-model="obj: url(./Assets/Models/english/car.obj); 
             mtl: url(./Assets/Texture/car.mtl)">
@@ -30,7 +33,7 @@
     <a-assets>
     <a-asset-item id="apple" src="./Assets/Models/english/apple.glb">
     <a-asset-item id="pumpkin" src="./Assets/Models/english/pumpkin.glb">
-  </a-assets>
+   </a-assets>
 
 
   <!-- Using the asset management system. -->
